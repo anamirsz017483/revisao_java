@@ -1,0 +1,30 @@
+
+CREATE TABLE aluno11 (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    idade INT
+);
+INSERT INTO aluno (nome, idade)
+VALUES ('beatriz', 17);
+
+
+SELECT * FROM aluno;
+
+UPDATE aluno
+SET idade = 18
+WHERE id = 1;
+
+
+DELETE FROM aluno
+WHERE id = 1;
+
+
+
+SELECT * 
+FROM aluno
+WHERE idade >= 16;
+
+
+SELECT * 
+FROM aluno
+ORDER BY nome ASC;
